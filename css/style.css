@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+:root {
+    --cream: hsl(30,38%,92%);
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Very-dark-cyan: hsl(158, 35%, 22%);
+    --Dark-grayish-blue: hsla(228, 12%, 48%, 0.544);
+    --White: hsl(0, 0%, 100%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: var(--cream);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 40%;
+    height: 60vh;
+    margin: 100px auto;
+    border-radius: 10px;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    width: 50%;
+    height: 100%;
+
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px 0 0 5px;
+
+}
+
+.content {
+    width: 50%;
+    height: 100%;
+}
+
+.content p:nth-of-type(1) {
+    letter-spacing: 6px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 15px;
+    color: var(--Dark-grayish-blue);
+}
+
+.content h1 {
+    font-size: 30px;
+    font-family: 'Fraunces';
+    font-weight: 700;
+    padding: 15px;
+}
+
+.content p:nth-of-type(2) {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+    padding: 15px;
+    color: var(--Dark-grayish-blue);
+    line-height: 1.5;
+}
+
+.content p:nth-of-type(3) {
+    font-size: 30px;
+    font-family: 'Fraunces';
+    font-weight: 700;
+    color: var(--Dark-cyan);
+    padding: 15px;  
+}
+
+.deletedprice {
+    text-decoration: line-through;
+    font-size: 14px;
+    padding-left: 10px;
+    color: var(--Dark-grayish-blue);
+}
+
+.cartbtn {
+    width: 70%;
+    display: block;
+    margin: auto;
+    padding: 15px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 700;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    border: none;
+    border-radius: 10px;
+
+}
+
+.cartbtn:hover {
+    background-color: var(--Very-dark-cyan);
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 15px; 
+    text-align: center; 
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
